@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: 'Times New Roman', Times, serif;
+        }
+        /* Áp dụng cho toàn trang */
+    </style>
+</head>
+<body>
+    <!-- Tạo bảng -->
+    <table border="5" cellpadding="10" cellspacing="10" bgcolor="yellow">
+        <!-- border thêm đường viền độ dày là 5 -->
+         <thead>
+            <!-- thead là phần đầu của bảng -->
+            <tr>
+                <!-- <td>Tên</td> -->
+                <!-- <td>Tuổi</td> -->
+                 <th>Tên...............................</th>
+                 <th>Tuổi..............................</th>
+                 <!-- Sữ dụng th để hiển thị kiểu tiêu đề, in đậm và tự động canh giữa -->
+            </tr>
+         </thead>
+         <tbody>
+            <!-- Tbody là phần body của bảng -->
+            <tr>
+                <td>Jill</td>
+                <td>50</td>
+            </tr>
+            
+            <tr>
+                <td align="right" bgcolor="red">Eve</td>
+                <td align="center">94</td>
+                <!-- align : canh nội dung trái, phải, giữa -->
+                 <!--bgcolor(thẻ mở) Thêm màu cho o  -->
+            </tr>
+         </tbody>
+         <tfoot>
+            <!-- Tfoot là phần chân bảng -->
+            <!-- không có thì bỏ qua -->
+         </tfoot>       
+        
+    </table>
+<!-- ============================================================= -->
+ <!-- Tạo bảng có 4 hàng, mỗi hàng có 2 cột -->
+<hr>
+<hr>
+<table border="1">
+    <!--  table head -->
+    <thead>
+        <th>Tháng</th>
+        <th>Doanh thu</th>
+    </thead>
+    <!-- table body -->
+    <tbody>
+        <!-- Hàng thứ 2 -->
+        <tr>
+            <td>1</td>
+            <td>$100</td>
+        </tr>
+        <!-- Hàng thứ 3 -->
+        <tr>
+            <td>2</td>
+            <td>$80</td>
+        </tr>
+        <!-- Hàng thứ 8 -->
+        <tr>
+            <td colspan="2" align="center">Tổng:$180</td>
+            <!-- thuộc tính colspan để gộp 2 cột lại thành 1 -->
+            <!-- thuộc tính align để canh nội dung ô left, right, center -->
+        </tr>
+    </tbody>
+    <tfoot>
+        
+    </tfoot>
+</table>
+<!-- ==================================================================== -->
+<hr>    
+<table border="1">
+    <tr>
+        <td rowspan="2">1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <!-- <td>1</td> -->
+        <td>2</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+</table>
+<!-- ======================================================================== -->
+ <!--Tạo bảng gồm 3 cột và 7 hàng  -->
+ <hr>
+<table border="1">
+    <!-- Hàng 1 -->
+    <tr bgcolor="gray">
+        <th>Quý</th>
+        <th>Tháng</th>
+        <th>Doanh Thu</th>
+    </tr>
+    <!-- hàng 2 -->
+    <tr>
+        <td rowspan="3">Một</td>
+        <td>Một</td>
+        <td>$100</td>
+    </tr>
+    <!-- hàng 3 -->
+    <tr>
+        <!-- <td></td> -->
+        <td>Hai</td>
+        <td>$80</td>
+    </tr>
+    <!-- hàng 4 -->
+    <tr>
+        <!-- <td></td> -->
+        <td>Ba</td>
+        <td>$80</td>
+    </tr>
+    <!-- hàng 5 -->
+    <tr>
+        <td rowspan="3">Hai</td>
+        <td>Bốn</td>
+        <td>$100</td>
+    </tr>
+    <!-- hàng 6 -->
+    <tr>
+        <!-- <td></td> -->
+        <td>Năm</td>
+        <td>$80</td>
+    </tr>
+    <!-- hàng 7 -->
+    <tr>
+        <!-- <td></td> -->
+        <td>Sáu</td>
+        <td>$80</td>
+    </tr>    
+</table>
+<!-- ======================================================================== -->
+ <!-- thẻ progress -->
+<progress max="100" value="10"></progress>
+<!-- Thẻ audio -->
+ <audio controls>
+    <!-- thuộc tính controls để hiển thị -->
+    <source src="./Asset/1 A Kiss Audio.mp3">
+    <source src="./Asset/1 A Kiss Audio.mp3">
+    <!-- có thể tạo nhiều source để sữ dụng trong trường hợp source trên không tương thích với một trình duyệt nào đó -->
+ </audio>
+ <hr>
+<!-- Thẻ video -->
+ <video controls width="400">
+    <source src="./Asset/3.mp4">
+ </video>
+</body>
+</html>

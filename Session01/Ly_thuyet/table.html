@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gộp cột và căn lề</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            /* width: 100%; */
+            
+        }
+        th, td {
+            padding: 10px;
+        }
+        /* Căn giữa nội dung của hàng đầu tiên và hàng thứ ba */
+        .center {
+            text-align: center;
+        }
+        /* Căn lề trái cho các hàng còn lại */
+        .left-align {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Ví dụ về bảng với ô gộp và căn lề</h2>
+
+    <table>
+        <!-- Hàng đầu tiên, gộp 3 cột thành 1 ô, căn giữa nội dung -->
+        <tr>
+            <td colspan="3" class="center">Nội dung hàng 1 được gộp và căn giữa</td>
+        </tr>
+        <!-- Hàng thứ hai, mỗi hàng có 3 cột, nội dung căn lề trái -->
+        <tr>
+            <td class="left-align">Dữ liệu hàng 2, cột 1</td>
+            <td class="left-align">Dữ liệu hàng 2, cột 2</td>
+            <td class="left-align">Dữ liệu hàng 2, cột 3</td>
+        </tr>
+        <!-- Hàng thứ ba, gộp 3 cột thành 1 ô, căn giữa nội dung -->
+        <tr>
+            <td colspan="3" class="center">Nội dung hàng 3 được gộp và căn giữa</td>
+        </tr>
+        <!-- Hàng thứ tư, cột 1 trống, cột 2 và cột 3 có nội dung, căn lề trái -->
+        <tr>
+            <td></td> <!-- Cột 1 để trống -->
+            <td class="left-align">Dữ liệu hàng 4, cột 2</td>
+            <td class="left-align">Dữ liệu hàng 4, cột 3</td>
+        </tr>
+    </table>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 3</title>
+    <style>
+        /* *{ */
+            /* font-family: 'Times New Roman', Times, serif; */
+        /* } */
+        /* Áp dụng cho toàn trang */
+        /* Tăng kích thước chữ cho table head */
+        th.font-size-th{
+            font-size: 30px;
+            /* padding: 10px;Tăng khoảng cách giữa ô head với ô d */
+            /* margin-bottom: 900px;Tăng khoảng cách bên dưới 1 */
+            text-align: left;
+        }
+        /* tăng khoảng cách với hàng dưới */
+        .margin-botton-h{
+            margin-bottom: 20px;
+        }
+        /* Tạo thuộc tính In hoa chữ cái đầu */
+        .capitalize{
+            text-transform: capitalize;/* In hoa chữ cái đầu của mỗi từ */
+        }
+    </style>
+</head>
+<body>
+    <table border="0">
+        <!-- Tạo bảng với 8 hàng, 3 cột -->
+         <!--Hàng thứ nhất  -->
+        <tr>
+            <!-- Gộp 3 cột thành 1 hàng -->
+             <th colspan="3" class="font-size-th"><p class="margin-botton-h">HTML Table</p></th>
+        </tr>
+        <!--Hàng thứ 2  -->
+         <tr>
+            <!--  -->
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+         </tr>
+         <!--Hàng thứ 3  -->
+         <tr class="capitalize">
+            <td>alfreds futterkiste</td>
+            <td>maria anders</td>
+            <td>germany</td>
+         </tr>
+         <!--Hàng thứ 4  -->
+         <tr class="capitalize">
+            <td>centro comercial moctezuma</td>
+            <td>francisco chang</td>
+            <td>mexico</td>
+         </tr>
+         <!--Hàng thứ 5  -->
+         <tr class="capitalize">
+            <td>ernst handel</td>
+            <td>roland mendel</td>
+            <td>austria</td>
+         </tr>
+         <!--Hàng thứ 6  -->
+         <tr class="capitalize">
+            <td>island trading</td>
+            <td>helen bennett</td>
+            <td>UK</td>
+         </tr>
+    </table>
+</body>
+</html>

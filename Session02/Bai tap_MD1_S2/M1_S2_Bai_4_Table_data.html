@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 4</title>
+    <style>
+        table{
+            /* border-collapse: collapse; */
+            width: 60%;
+            border: 2px solid black;
+            margin: 1px; /*Khoảng cách giữa bảng và các phần tử khác xung quanh bảng.*/
+            padding: 10px;/* Khoảng cách giữa viền bảng và các ô */
+        }
+        /* Thiết lập viền cho tất cả các ô */
+        th, td{
+            border: 1px solid black;/* Thiết lập viền cho tất cả các ô */
+            padding: 10px;
+            text-align: left;
+        }
+        /* Xóa viền của hàng đầu tiên */
+        /* Hàng thứ 1 Canh giữ ô */
+        tr:first-child td{
+            border: none;/* Xóa viền */
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Tạo bảng gồm 5 cột, 5 hàng -->
+     <table>
+        <!-- hàng thứ 1 -->
+         <tr>
+            <td colspan="5">This is table caption</td>
+         </tr>
+         <!-- Hang thu 2 -->
+          <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+            <th>Column 4</th>
+            <th>Column 5</th>
+          </tr>
+          <!-- Hang thu 3 -->
+          <tr>
+            <td>data 1</td>
+            <td rowspan="3">data 2</td>
+            <td>data 3</td>
+            <td>data 4</td>
+            <td>data 5</td>
+          </tr>
+          <!-- Hang thu 4 -->
+          <tr>
+            <td>data 1</td>
+            <!-- <td></td> -->
+            <td>data 3</td>
+            <td colspan="2">data 4 and 5</td>
+            <!-- <td>data 5</td>             -->
+          </tr>
+          <!-- Hang thu 5 -->
+          <tr>
+            <td>data 1</td>
+            <!-- <td></td> -->
+            <td>data 3</td>
+            <td>data 4</td>
+            <td>data 5</td>
+          </tr>
+     </table>
+</body>
+</html>
