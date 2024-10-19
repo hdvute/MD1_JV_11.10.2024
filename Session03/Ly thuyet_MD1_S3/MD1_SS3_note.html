@@ -1,0 +1,72 @@
+<!-- 
+    form: Định nghĩa một form. Thuộc tính action xác định URL mà form sẽ gửi dữ liệu đến. 
+        method="post" dùng để gửi dữ liệu qua phương thức POST.
+    input: Dùng để tạo các trường nhập liệu, 
+        như text cho tên người dùng, password cho mật khẩu, 
+        radio cho lựa chọn giới tính, 
+        checkbox cho điều khoản.
+    select và option: Tạo menu lựa chọn dạng thả xuống.
+    textarea: Dùng để nhập văn bản dài (bình luận).
+    submit và reset: Tạo các nút gửi form và làm lại từ đầu.
+
+    Input: phần tử nhập liệu như
+            text, password, radio, checkbok, ....
+    Type: thuộc tính type
+            radio : kiểu radio button
+    id : thuộc tính id cung cấp một định danh
+            định danh giúp liên kết với label
+    name : thuộc tính name. các type có cùng name sẽ được gom lại
+            name="gender" cho biết đây là nhóm lựa chọn liên quan đến giới tính.
+    value : thuộc tính value, chỉ định giá trị sẽ được gửi tới máy chủ
+-->
+<!-- 
+    select : phần tử tạo ra menu thả xuống
+    Các thuộc tính trong select
+        id, name, option
+    Mỗi phần tử <option> bên trong <select> đại diện cho một tùy chọn mà người dùng có thể chọn. 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Dang ki thong tin</h1>
+    <form action="/submit-form" method="post">
+        <!-- ten nguoi dung -->
+         <label for="username">Ten nguoi dung</label><br>
+         <input type="text" id="username" required> <br><br>
+
+        <!-- Mat khau -->
+          <label for="password">Mat khau</label><br>
+          <input type="password" id="password" name="password" required><br><br>
+        
+        <!-- Gioi tinh -->
+            <label for="">Gioi tinh</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Nam</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Nu</label><br>
+
+        <!-- Quoc gia -->
+            <label for="country">Quoc gia</label><br>
+            <select name="country" id="country">
+                <option value="vietnam">Viet Nam</option>
+                <option value="nhatban">Nhat Ban</option>
+                <option value="usa">My</option>
+            </select><br><br>
+        <!-- Binh luan -->
+            <label for="comments">Binh luan</label><br>
+            <textarea name="comments" id="comments" rows="4" cols="50"></textarea><br><br>
+        <!-- Dieu khoan -->
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">Toi dong y voi cac dieu khoan va dieu khien tren</label><br><br>
+        <!-- Nut gui -->
+            <input type="submit" value="gui">
+            <input type="reset" value="lam lai">
+            
+    </form>
+</body>
+</html>

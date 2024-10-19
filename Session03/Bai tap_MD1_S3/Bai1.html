@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 1</title>
+    <style>
+        span{
+            color: #DACC18;
+        }
+        td.top-left{
+            display: flex;
+            align-items: flex-start;/* Căn theo chiều dọc lên trên */
+            /* margin: 0; */
+            /* padding: 0; */
+        }
+    </style>
+</head>
+<body>
+    <div style="background-color: yellow;">
+        <h1 style="background-color:#D8471A;">SỞ THÍCH CỦA BẠN</h1>
+        <table>
+            <tr>
+                <td align="right" style="color: blue;">Ho va ten</td>
+                <td align="left">
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <td align="right" style="color: blue;">Email</td>
+                <td align="left"><input type="text"></td>
+            </tr>
+            <tr>
+                <td style="color: blue;">So thich</td>
+                <td>
+                    <input type="checkbox"><span>The thao</span>
+                </td>
+                <td>
+                    <input type="checkbox"><span>Am nhac</span>
+                </td>
+                <td>
+                    <input type="checkbox"><span>Doc sach</span>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="checkbox"><span>Luot web</span>
+                </td>
+                <td>
+                    <input type="checkbox"><span>Choi game</span>
+                </td>
+                <td>
+                    <input type="checkbox"><span>Dien anh</span>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="checkbox"><span>Du lich</span>
+                </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <button>Gửi thông tin</button>
+                    <button>Nhập lại</button>
+                </td>
+                <!-- <td></td> -->
+                <!-- <td></td> -->
+            </tr>
+        </table>
+    </div>
+    <hr><hr>
+    <!-- ================================================ -->
+    <div style="background-color: #DACC18;">
+        <table>
+            <tr>
+                <th style="color: blue;" colspan="2" bgcolor="#CEE4B6">DANG KY HOC VIEN</th>
+            </tr>
+            <tr>
+                <td align="left">Ho ten</td>
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <td align="left">Ngay sinh</td>
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <td align="left">Gioi tinh</td>
+                <td>
+                    <input type="radio" id="gender" name="gender">
+                    <label for="gender2">Nam</label>
+                    <input type="radio" id="gender" name="gender">
+                    <label for="gender2">Nu</label>
+                </td>
+            </tr>
+            <tr>
+                <td class="top-left">Dia chi</td>
+                <td>
+                    <textarea name="" id="" cols="20" rows="4"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td align="left">lop</td>
+                <td>
+                    <select name="" id="">
+                        <option value=""disable selected> -chon lop-</option>
+                        <option value="">Lop 1</option>
+                        <option value="">Lop 2</option>
+                        <option value="">Lop 2</option>
+                        <option value="">Lop 2</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="left">Email</td>
+                <td>
+                    <input type="email">
+                </td>
+            </tr>
+            <tr>
+                <td align="left">Dien thoai</td>
+                <td>
+                    <input type="number">
+                </td>
+            </tr>
+            <tr>
+                <td align="left"></td>
+                <td>
+                    <button>Dang ki</button>
+                    <button>Nhap lai</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
