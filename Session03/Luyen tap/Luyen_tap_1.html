@@ -4,8 +4,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>練習</title>
+    <style>
+        table{
+            width: 60%;
+            /* border-collapse: collapse;Gộp các viền lại thành một */
+            /* background-color: aqua; */
+        }
+        th{
+            background-color: yellow;
+        }
+        label{
+            width: auto;
+            display: inline-block;/* Giúp label có thể điều chỉnh kích thước */
+            /* padding: 5px; */
+            /* padding khoan cach giua noi dung va vien */
+            /* margin-bottom: 10px; */
+        }
+        td:first-child{
+            width: 150px;
+        }
+        td{
+            background-color: aqua;
+        }
+    </style>
 </head>
 <body>
-    
+    <table border="1">
+        <!-- table 9 hang, 2 cot -->
+         <!--The first row  -->
+        <tr>
+            <th colspan="2">Registration Form</th>
+        </tr>
+        <!-- The second row -->
+         <tr>
+            <td>
+                <label for="name">Enter Name</label>
+            </td>
+            <td>
+                <input id="name" type="text">
+            </td>
+         </tr>
+         <!-- The third row -->
+         <tr>
+            <td>
+                <label for="password">Enter Password</label>
+            </td>
+            <td>
+                <input id="password" type="text" >
+            </td>
+         </tr>
+         <!-- the fourth row -->
+         <tr>
+            <td>
+                <label for="address">Enter Address</label>
+            </td>
+            <td>
+                <textarea name="" id="address"></textarea>
+            </td>
+         </tr>
+         <!-- the fifth row -->
+         <tr>
+            <td>
+                <label for="">Sect Game</label>
+            </td>
+            <td>
+                <input type="checkbox" id="hockey"><label for="hockey">Hockey</label><br>
+                <!-- Hockey <br> -->
+                <input type="checkbox" id="footbal"><label for="footbal">Footbal</label><br>                
+                <!-- Footbal <br> -->
+                <input type="checkbox" id="Badminton"><label for="Badminton">Badminton</label><br>                
+                <!-- Badminton <br> -->
+                <input type="checkbox" id="circket"><label for="circket">Circket</label><br>                
+                <!-- Circket <br> -->
+                <input type="checkbox" id="volleyball"><label for="volleyball">Volleyball</label>                
+                <!-- Volleyball <br> -->
+            </td>
+         </tr>
+         <!-- the sexth row -->
+         <tr>
+            <td>
+                <label for="">Gender</label>
+            </td>
+            <td>
+                <input type="radio" name="gender" >
+                <label for="">Male</label>
+                <input type="radio" name="gender">
+                <label for="">Female</label>
+            </td>
+         </tr>
+         <!-- the seventh row -->
+         <tr>
+            <td>
+                <label for="">Select ur age</label>
+            </td>
+            <td>
+                <select name="" id="">
+                    <option value="">Select</option>
+                    <option value="">20-25</option>
+                    <option value="">26-30</option>
+                    <option value="">31-35</option>
+                    <option value="">36-40</option>
+                </select>
+            </td>
+         </tr>
+         <!-- the eighth row -->
+         <tr>
+            <td colspan="2">
+                <button style="width: 120px;">Click me</button>
+                <button style="width: 80px;">Reset</button>
+                <br>
+                <input type="submit" value="Submit Form" style="width: 120px;">
+            </td>      
+         </tr>
+         <!-- the ninth row -->
+         <!-- <tr></tr> -->
+          <!--  -->
+    </table>
 </body>
 </html>
