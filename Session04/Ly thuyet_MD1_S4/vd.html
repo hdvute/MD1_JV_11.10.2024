@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang đọc truyện ngắn</title>
+    <style>
+        /* Căn giữa toàn bộ nội dung trang */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;  /* Căn giữa theo chiều ngang */
+            align-items: center;      /* Căn giữa theo chiều dọc */
+            min-height: 100vh;        /* Chiều cao tối thiểu 100% của trang */
+            margin: 0;
+            padding: 0;
+            text-align: center;       /* Căn giữa văn bản */
+            background-color: #f0f0f0; /* Màu nền để làm trang rõ ràng hơn */
+        }
+
+        /* Để căn giữa phần tử container */
+        .container {
+            max-width: 800px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .toc {
+            background-color: #f4f4f4;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        .toc h5 {
+            margin: 10px 0;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .story-section {
+            margin-bottom: 40px;
+        }
+
+        .story-section h2 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Ảnh đầu trang -->
+        <img src="link-to-your-image.jpg" alt="Ảnh truyện ngắn">
+
+        <!-- Mục lục truyện -->
+        <div class="toc">
+            <h2>Mục lục truyện</h2>
+            <h5><a href="#story1">1. Truyện ngắn số 1</a></h5>
+            <h5><a href="#story2">2. Truyện ngắn số 2</a></h5>
+            <h5><a href="#story3">3. Truyện ngắn số 3</a></h5>
+        </div>
+
+        <!-- Nội dung truyện -->
+        <div id="story1" class="story-section">
+            <h2>Truyện ngắn số 1</h2>
+            <p>Đây là nội dung của truyện ngắn số 1. Nội dung sẽ tiếp tục ở đây với nhiều dòng văn bản...</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae eros eget mauris venenatis sagittis.</p>
+        </div>
+
+        <div id="story2" class="story-section">
+            <h2>Truyện ngắn số 2</h2>
+            <p>Đây là nội dung của truyện ngắn số 2. Câu chuyện này kể về một hành trình đầy thú vị và bất ngờ...</p>
+            <p>Phasellus dapibus metus eget lorem sollicitudin, nec varius orci interdum. Nam id magna euismod.</p>
+        </div>
+
+        <div id="story3" class="story-section">
+            <h2>Truyện ngắn số 3</h2>
+            <p>Đây là nội dung của truyện ngắn số 3. Một câu chuyện đầy ý nghĩa về tình bạn và sự hy sinh...</p>
+            <p>Fusce cursus nisi et orci varius, sed scelerisque eros malesuada. Aliquam erat volutpat.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>

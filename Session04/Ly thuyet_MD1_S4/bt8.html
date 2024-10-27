@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion with Selected Style</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .accordion {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 300px;
+        }
+
+        .accordion-item {
+            border-top: 1px solid #ccc;
+        }
+
+        .accordion-item:first-child {
+            border-top: none; /* Không có viền cho phần đầu tiên */
+        }
+
+        .accordion-header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            cursor: pointer;
+            margin: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s, color 0.3s; /* Hiệu ứng chuyển màu mượt mà */
+        }
+
+        .accordion-header:hover {
+            background-color: hsl(123, 75%, 11%);
+        }
+
+        .accordion-header:active {
+            background-color: hsl(303, 53%, 40%); /* Màu nền khi nhấn */
+            color: white; /* Màu chữ khi nhấn */
+        }
+
+        .accordion-content {
+            display: none; /* Ẩn nội dung mặc định */
+            padding: 15px;
+            background-color: #f9f9f9;
+        }
+
+        /* Hiển thị nội dung khi checkbox được kiểm tra */
+        input[type="checkbox"]:checked + .accordion-header + .accordion-content {
+            display: block;
+        }
+
+        /* Ẩn checkbox */
+        input[type="checkbox"] {
+            display: none; /* Ẩn ô vuông của checkbox */
+        }
+
+        /* Mũi tên */
+        .arrow {
+            transition: transform 0.3s; /* Hiệu ứng chuyển động mượt mà */
+        }
+
+        /* Đảo ngược mũi tên khi checkbox được kiểm tra */
+        input[type="checkbox"]:checked + .accordion-header .arrow {
+            transform: rotate(180deg);
+        }
+
+        /* Thay đổi màu chữ và nền khi được chọn */
+        input[type="checkbox"]:checked + .accordion-header {
+            background-color: #357a3a; /* Màu nền khi chọn */
+            color: rgb(204, 48, 48); /* Màu chữ khi chọn */
+        }
+    </style>
+</head>
+<body>
+
+<div class="accordion">
+    <div class="accordion-item">
+        <input type="checkbox" id="item1">
+        <label class="accordion-header" for="item1">
+            Phần 1 <span class="arrow">▼</span>
+        </label>
+        <div class="accordion-content">
+            <p>Đây là nội dung của phần 1. Bạn có thể đặt bất kỳ thông tin nào ở đây.</p>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <input type="checkbox" id="item2">
+        <label class="accordion-header" for="item2">
+            Phần 2 <span class="arrow">▼</span>
+        </label>
+        <div class="accordion-content">
+            <p>Đây là nội dung của phần 2. Thêm thông tin chi tiết vào đây.</p>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <input type="checkbox" id="item3">
+        <label class="accordion-header" for="item3">
+            Phần 3 <span class="arrow">▼</span>
+        </label>
+        <div class="accordion-content">
+            <p>Đây là nội dung của phần 3. Nội dung có thể thay đổi.</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

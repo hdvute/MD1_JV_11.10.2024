@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="Lythuyet.css"> -->
+    <style>
+        h2 {
+            background-color: violet;
+            display: inline-flex;
+        }
+        div {
+            color: red;
+        }
+        .heading_ten_class{ /* ->Class : . + tên class */
+            background-color: blue;
+            font-size: 30px;
+            color: white;
+        }
+        .btn {
+            padding: 5px;
+            border: none;
+            width: 80px;
+            border-radius: 5px;
+        }
+        .btn1 {
+            background-color: red;
+        }
+        .btn2 {
+            background-color: greenyellow
+        }
+        #title{
+            color: blueviolet;
+        }
+        div p{
+            color: gray;
+        }
+        h5,h6{
+            background-color: gray;
+        }
+        .color{
+            color: rgba(139, 69, 19,0.2);/*  */
+            /* anpha : 0 -> 1 độ sáng tăng dần */
+        }
+        .font {
+            font-size: 32px;
+            font-weight: 1000;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .text-align {
+            background-color: aqua;
+            text-align: center;/* right , left */
+            /* text-decoration: underline; gạch chân dưới text */
+            text-decoration: line-through; /* gạch chân dưới text */
+            text-transform: uppercase;/* Viết in hoa */
+        }
+        a {
+            text-decoration: none; /* Gắn link : xóa gạch chân dưới text */
+        }
+    </style>
+  </head>
+  <body>
+    <h1 style="color: red; font-size: 50px; background-color: antiquewhite;">nhúng css vào html bằng cách inline</h1>
+    <p style="color: gray">Đổi màu text</p>
+    <a href=""></a>
+    <img src="" alt="">
+    <!-- h1 : element hay là tag -->
+    <!-- inline: nhúng trực tiếp vào line, trong thẻ mở -->
+     <!-- style, href : gọi là thuộc tính (attribute) -->
+    <h2>CCS internal</h2>
+    <h2>CSS internal 2</h2>
+    <h5>Lorem ipsum dolor sit amet.</h5>
+    <!-- lorem + số chữ -->
+     <!-- lorem*số dòng -->    
+     <div>Học css external</div>
+     <!-- ===================================================== -->
+      <div>
+        CSS seclector
+      </div>
+      <div class="heading_ten_class">
+        CSS seclector - class
+        <!-- Class là một thuộc tính (attribute) của element div -->
+      </div>
+      <button class="btn btn1">Click 1</button>
+      <button class="btn btn2">Click 2</button>
+      <!-- 
+       -->
+      <div id="title">
+        <!-- Đặt một id có tên là id -->
+        selector by id
+      </div>
+
+      <div>
+        <p>content 1</p>
+      </div>
+      <div>
+        <p>content 2</p>
+      </div>
+      <div>
+        <p>content 3</p>
+      </div>
+      <!-- bài toán css cho các thẻ p trong div -->
+       <!--  -->
+      <h5>content h5</h5>
+      <h6>content h6</h6>
+      <!--  -->
+      <div class="color">
+        Test color
+      </div>
+      <p class="font">font</p>
+      <h5 class="text-align">Canh chỉnh text</h5>
+  </body>
+</html>

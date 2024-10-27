@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baitap7</title>
+</head>
+<style>
+    .notification-container {
+        display: flex;
+        justify-content: center; /* Căn giữa theo chiều ngang */
+        align-items: center;    /* Căn giữa theo chiều dọc */
+        height: 100vh;          /* Đặt chiều cao container bằng với chiều cao màn hình */        
+    }
+    .notification {
+        width: 800px;
+        border: 1px solid gray;
+        border-radius: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .notification-header {
+        background-color: #dedcdc;
+        /* padding: 5px; */
+        font-size: 18px;
+        /* font-weight: bold; */
+        display: flex;
+        justify-content: center;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    .notification-body {
+        padding: 10px 10px 10px 10px;
+        background-color: white;
+        font-size: 18px;
+        text-align: center;
+
+    }
+    .notification-foot {
+        background-color: #dedcdc;
+        /* padding: 5px; */
+        font-size: 18px;
+        color: #706f6f ;
+        /* font-weight: bold; */
+        display: flex;
+        justify-content: center;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        
+    }
+    .btn {
+        cursor: pointer;/* Con trỏ thành bàn tay chỉ khi di chuyển qua */
+        background-color: blue;
+        color: white;
+        border: 0;
+        border-radius: 5px;
+        padding: 8px 20px 8px 20px;
+        font-size: 18px;
+    }
+</style>
+<body>
+    <div class="notification-container">
+        <div class="notification">
+            <!-- =============================== notification -->
+            <div class="notification-header">
+                <p>Featured</p>
+            </div>
+            <div class="notification-body">
+                <h5><b>Special title treatment</b></h5>
+                <p>
+                    With supporting text below as a natural lead-in to additional content.
+                </p>
+                <button class="btn">
+                    Go somewhere
+                </button>
+            </div>
+            <div class="notification-foot">
+                <p>2 days ago</p>
+            </div>
+            <!-- ============================================= -->
+        </div>
+    </div>  
+</body>
+</html>

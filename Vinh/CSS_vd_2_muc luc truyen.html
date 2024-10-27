@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang đọc truyện ngắn</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        .toc {
+            background-color: #f4f4f4;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .toc h5 {
+            margin: 10px 0;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .story-section {
+            margin-bottom: 40px;
+        }
+        .story-section h2 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Bước 4: Ảnh đầu trang -->
+        <img src="link-to-your-image.jpg" alt="Ảnh truyện ngắn">
+
+        <!-- Bước 1: Mục lục truyện -->
+        <div class="toc">
+            <h2>Mục lục truyện</h2>
+            <h5><a href="#story1">1. Truyện ngắn số 1</a></h5>
+            <h5><a href="#story2">2. Truyện ngắn số 2</a></h5>
+            <h5><a href="#story3">3. Truyện ngắn số 3</a></h5>
+            <!-- 
+                href="#story1": Đây là thuộc tính chỉ định liên kết sẽ đưa người dùng đến một phần của trang với id="story1". 
+                Dấu # trong giá trị của href cho biết rằng đây là một liên kết nội bộ (anchor link) và không phải là một URL bên ngoài.
+            -->
+        </div>
+
+        <!-- Bước 2 và Bước 3: Nội dung truyện và liên kết -->
+        <div id="story1" class="story-section">
+            <h2>Truyện ngắn số 1</h2>
+            <p>Đây là nội dung của truyện ngắn số 1. Nội dung sẽ tiếp tục ở đây với nhiều dòng văn bản...</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae eros eget mauris venenatis sagittis.</p>
+        </div>
+
+        <div id="story2" class="story-section">
+            <h2>Truyện ngắn số 2</h2>
+            <p>Đây là nội dung của truyện ngắn số 2. Câu chuyện này kể về một hành trình đầy thú vị và bất ngờ...</p>
+            <p>Phasellus dapibus metus eget lorem sollicitudin, nec varius orci interdum. Nam id magna euismod.</p>
+        </div>
+
+        <div id="story3" class="story-section">
+            <h2>Truyện ngắn số 3</h2>
+            <p>Đây là nội dung của truyện ngắn số 3. Một câu chuyện đầy ý nghĩa về tình bạn và sự hy sinh...</p>
+            <p>Fusce cursus nisi et orci varius, sed scelerisque eros malesuada. Aliquam erat volutpat.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
