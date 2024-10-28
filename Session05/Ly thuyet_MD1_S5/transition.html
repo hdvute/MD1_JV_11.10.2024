@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn{
+            width: 80px;
+            height: 20px;
+            background-color: tomato;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            /* transition: all 5s;  */
+            transition: all 5s ease-in 3s;
+            /* transition: width 5s linear; */
+            /* linear : timing funtion */
+            /* ease-in  : deylay mot khoang thoi gian mới tác động*/
+        }
+        /* Di chuột vào thì đổi trạng thái . gọi là hover */
+        .btn:hover{
+            background-color: green;
+            width: 100px;
+        }
+        span{
+            background-color: green;
+            width: 10px;
+            height: 10px;            
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        transition : đổi dạng, đổi kiểu
+     -->
+        <button class="btn">login</button><br>
+        <span>the span</span>            
+</body>
+</html>

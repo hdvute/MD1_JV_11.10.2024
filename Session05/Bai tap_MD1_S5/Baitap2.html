@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baitap2</title>
+    <style>
+        .list-container {
+            background-color: rgb(120, 200, 237,0.2);
+            width: 300px;
+            border: 1px solid gray;
+            border-radius: 10px;
+            padding: 5px;
+        }
+        .list {
+            padding-left: 10px;
+        }
+        .list-body {
+
+        }
+        /* ================= */
+        ul{
+            list-style-type: none;/* Bỏ dấu chấm mặc định */
+            padding: 0;
+        }
+        ul li {
+            display:flex;
+            align-items: center;
+            color: black;
+            font-size: 20px;
+            /* transition: color 0.3s ease; canh chinh thoi gian doi mau */
+            cursor: pointer;
+        }
+        /* Sử dụng pseudo-element */
+        ul li::before { 
+            content: "o";
+            color: black ;
+            font-size: 12px;
+            margin-right: 5px;
+            vertical-align: middle;/* Canh giữa dấu chấm theo chiều ngang */
+        }
+        ul li:hover {
+            color: red;/* Màu chữ khi di chuột vào */
+        }
+        /* ul li:hover: Thay đổi màu chữ của mục danh sách khi di chuột vào. */
+        ul li:hover::before {
+            color: red;/* Thay đổi màu dấu chấm khi di chuột vào */
+        }
+    </style>
+</head>
+<body>
+    <div class="list-container">
+        <div class="list">
+            <div class="list-body">
+                <ul>
+                    <li>HTML Tutorial</li>
+                    <li>CSS tutorial</li>
+                    <li>SQL tutorial</li>
+                    <li>JavaScript tutorial</li>
+                    <li>How to tutorial</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

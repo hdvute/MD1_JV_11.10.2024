@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vòng Loading</title>
+    <style>
+        /* CSS cho vòng tròn loading */
+        .loader {
+            width: 50px;
+            height: 50px;
+            border: 5px solid #f3f3f3;  /* màu nền của vòng */
+            border-top: 5px solid #3498db;  /* màu phần loading */
+            border-radius: 50%;
+            animation: spin 1s linear infinite; /* tạo chuyển động xoay */
+        }
+
+        /* Định nghĩa animation */
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="loader"></div>
+</body>
+</html>

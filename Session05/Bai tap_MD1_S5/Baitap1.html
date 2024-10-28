@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baitap1</title>
+    <style>
+        .form-container {
+            border: 0;
+            background-color: rgb(248, 231, 133,0.3);
+            width: 300px;
+        }
+        .form {
+            padding-left: 10px;
+            padding-top: 10px;
+            padding-bottom: 20px;
+        }
+        .form-header {
+          margin-bottom: auto;  
+          font-weight: bold;
+        }
+        .form-body1 {
+            /* margin-top: 15px; */
+            margin-bottom: 15px;
+        }
+        .form-body2 {
+            margin-top: 5px;
+        }
+        .form-footer {
+            margin-top: 5px;
+        }
+        .form-body1 p {
+            margin-bottom: 1px;/* Khoảng cách giữa văn bản và ô nhập liệu bên dưới */
+            height: 18px;
+        }
+        .form-body2 p {
+            margin-bottom: 1px;/* Khoảng cách giữa văn bản và ô nhập liệu bên dưới */
+            height: 18px;
+        }
+        .form-body1 input {
+            margin-top: 1px;
+            /* margin-bottom: 5px;Khoảng cách giữa các ô nhập liệu với phần tử bên dưới */
+        }
+        button {
+            cursor: pointer;
+            border: 1px solid gray;
+            border-radius: 4px;
+            padding: 2px 10px 2px 10px;
+            text-align: center;
+        }
+        /* ============================================================================= */
+        input:active {
+            background-color: yellow;
+            /* Mau chu thay doi chi khi click va giu chuot */
+        }
+        input:focus {
+            background-color: yellow;
+            /* outline: none; */ 
+            /* Bỏ viền mặc định của trình duyệt nếu cần */
+        }
+        button:active {
+            background-color: #96fb96;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <div class="form">
+            <div class="form-body">
+                <!--  ===================== -->
+                <div class="form-header">
+                    <p>Thong tin ca nhan</p>
+                </div>
+                <!--  -->
+                <div class="form-body1">
+                    <!-- <label for="">Ho va ten</label><br> -->
+                     <p>Ho va ten</p>
+                    <input type="text">
+                </div>
+                <!--  -->
+                <div class="form-body2">
+                    <!-- <label for="">Tuoi</label><br> -->
+                     <p>Tuoi</p>
+                    <input type="number">
+                </div>
+                <!--  -->
+                <div class="form-footer">
+                    <button>Gui</button>
+                </div> 
+                <!--  ===================== -->                              
+            </div>
+        </div>
+    </div>
+</body>
+</html>
