@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Thiết lập bố cục chính */
+        .container {
+            display: grid;
+            grid-template-areas: 
+                "header header"
+                "section aside"
+                "article aside"
+                "footer footer";            
+            /* Chiều rộng phần bên trái và phải */
+            /* grid-template-columns: 1fr 200px;  */
+            grid-template-columns: 40% 20%;; 
+            gap: 10px;
+            padding: 10px;
+            /*
+            grid-template-columns: cột đầu tiên có chiều rộng linh hoạt (1fr), và cột aside có chiều rộng cố định là 200px. 
+                     
+            */
+
+        }
+        
+        .header {
+            grid-area: header;
+            height: 100px;
+            background-color: red;
+        }
+        
+        .section {
+            grid-area: section;
+            background-color: green;
+            height: 150px;
+        }
+        
+        .article {
+            grid-area: article;
+            background-color: blue;
+            height: 150px;
+            color: white;
+        }
+        
+        .aside {
+            grid-area: aside;
+            background-color: violet;
+            height: calc(150px + 150px); /* Đặt chiều cao bằng tổng của section và article */
+        }
+        
+        .footer {
+            grid-area: footer;
+            height: 100px;
+            background-color: gray;
+        }
+        
+        /* Responsive: thay đổi bố cục thành cột dọc trên màn hình nhỏ */
+        /* @media (max-width: 768px): bố cục chuyển sang xếp dọc khi màn hình nhỏ, giúp các phần tử dễ đọc trên thiết bị di động.    */
+        /* Nếu tháo bỏ phần này thì khi thu nhỏ, phóng to thì bố cục tỉ lệ không thay đổi */
+        /* khi chiều rộng vượt max thì bố cục thay dổi theo như sắp xếp bên dưới */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-areas: 
+                    "header"
+                    "section"
+                    "article"
+                    "aside"
+                    "footer";
+                grid-template-columns: 1fr;
+            }
+            .aside {
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="section">Section</div>
+        <div class="article">Article</div>
+        <div class="aside">Aside</div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>

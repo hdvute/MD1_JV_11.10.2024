@@ -1,0 +1,23 @@
+.button{
+            button{
+                background-color:#50B83C;
+                text-align: center;
+                height: 36px;
+                border-radius: 4px;
+                border: none;
+                /*  */
+                width: 350px;
+                position: relative;
+                left: calc(380px + 2px);
+            }            
+        }
+.input{
+    width: 350px;
+    color: black;
+    height: 36px;
+    margin: 10px;
+    /*  */
+    padding-left: 12px;
+    padding-right: 20px;
+    box-sizing: border-box; /* Đảm bảo không vượt ra ngoài khung */
+}

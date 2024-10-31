@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baitap4</title>
+    <style>
+        .container{
+            width: 800px;
+            height: auto;
+            border: 1px solid gray;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        .header{
+            padding-left: calc(10px + 10px);
+            h2 {
+                margin-bottom: 0px;
+            }
+            p {
+                margin-top: 0px;
+            }
+        }
+        .body{
+            display: flex;
+        }
+        .body-left{
+            width: 370px;
+            height: 232px;
+            /* height: auto; */
+            padding-left: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            input{
+                width: 350px;
+                color: black;
+                height: 36px;
+                margin: 10px;
+                /*  */
+                padding-left: 12px;
+                padding-right: 20px;
+                box-sizing: border-box; /* Đảm bảo không vượt ra ngoài khung */
+            }
+        }
+        .body-right{
+            width: 370px;
+            height: 232px;            
+            /* padding-left: 8px; */
+            margin-left: 2px;
+            display: flex;
+            align-items: center;
+            box-sizing: border-box;/* Đảm bảo không vượt ra ngoài khung */
+            textarea{
+                width: 350px;
+                height: 216px;
+                box-sizing: border-box; /* Đảm bảo không vượt ra ngoài khung */
+                resize: none; /* Ngăn kéo to textarea nếu muốn */
+                margin: 0px;
+                /*  */
+                padding-left: 12px;
+                padding-top: 12px;
+            }
+        }
+        .button{
+            button{
+                background-color:#50B83C;
+                text-align: center;
+                height: 36px;
+                border-radius: 4px;
+                border: none;
+                /*  */
+                width: 350px;
+                position: relative;
+                left: calc(380px + 2px);
+            }            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- =================== -->
+        <div class="header">
+            <h2>
+                Gui thong tin lien he cho toi
+            </h2>
+            <p>
+                Ban hay dien noi dung tin nhan vao form duoi day.
+                Chung toi se tra loi ban sau khi nhan duoc
+            </p>
+        </div>
+        <!-- =================== -->
+         <div class="body">
+            <div class="body-left">
+                <div class="input-left">
+                    <input type="text" placeholder="Ho va ten *">
+                </div>
+                <div class="input-left">
+                    <input type="text" placeholder="Email *">
+                </div>
+                <div class="input-left">
+                    <input type="number" placeholder="So dien thoai *">
+                </div>
+                <div class="input-left">
+                    <input type="text" placeholder="Dia chi *">
+                </div>
+            </div>
+            <!-- =================== -->
+            <div class="body-right">
+                <textarea name="" id="" placeholder="Noi dung *"></textarea>
+            </div>
+            <!-- =================== -->    
+         </div>  
+         <div class="button">
+            <button>Gui</button>
+         </div>      
+    </div>
+</body>
+</html>

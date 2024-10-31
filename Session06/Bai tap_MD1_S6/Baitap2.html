@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baitap2</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+        }
+        .container{
+            width: 870px;
+            border: 1px solid gray;
+            padding: 5px;
+            font-size: 14px;
+        }
+        .navigation{
+            background-color: #007AFF;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            /*  */
+            display: flex;
+            align-items: center;
+            justify-content:space-between
+        }
+        .home, .products, .about, .contact, .register, .login{
+            color: white;
+            width: auto;
+            padding-left: 5px;
+            padding-right: 5px;
+        }        
+        .search {
+            width: 200px; /* Adjust width as needed */
+            height: auto;
+            /* height: 60px; */
+            position: relative;
+            background-color: white;
+            border: 1px solid gray;
+            border-radius: 4px;
+            /*  */
+            display: flex;
+        }
+        .search input[type="text"] {
+            width: 100%;
+            padding: 8px 30px 8px 8px; 
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            /*
+                box-sizing: border-box;, tất cả các thành phần của phần tử như padding và
+                border sẽ được tính gộp vào kích thước tổng của chiều rộng và chiều cao phần tử, thay vì cộng thêm vào. 
+             */
+        }
+        .search button{
+            position: absolute;
+            right: 0px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: transparent;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            color: #888;
+            /* box-sizing: border-box; */
+        }   
+        .avatar{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+            /* 
+            Khi dùng object-fit: cover;, ảnh hoặc video sẽ:
+            Được phóng to hoặc thu nhỏ sao cho kích thước của nó vừa vặn với khung chứa.
+            Bị cắt một phần ở các cạnh nếu tỷ lệ của ảnh không khớp với tỷ lệ của khung chứa, 
+            nhưng đảm bảo phần trung tâm luôn hiển thị mà không bị méo.
+            */
+        } 
+        .user{
+            color:white;
+            display: flex;
+            align-items: center;
+            img{
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                object-fit: cover;
+                /* 
+                Khi dùng object-fit: cover;, ảnh hoặc video sẽ:
+                Được phóng to hoặc thu nhỏ sao cho kích thước của nó vừa vặn với khung chứa.
+                Bị cắt một phần ở các cạnh nếu tỷ lệ của ảnh không khớp với tỷ lệ của khung chứa, 
+                nhưng đảm bảo phần trung tâm luôn hiển thị mà không bị méo.
+                */
+                padding-right: 4px;
+            }
+        }        
+        .icon-user{
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navigation">
+            <div class="home">Home</div>
+            <div class="products">Products</div>
+            <div class="search">
+                <input type="text" placeholder="Search">
+                <button>🔍</button>
+            </div>
+            <div class="about">About</div>
+            <div class="contact">Contact</div>
+            <div class="register">Register</div>
+            <div class="login">Login</div>
+            <div class="user">                
+                <img src="../../Image/avatar.jpg" alt="">
+                <p>Hoang Dinh Vinh</p>
+            </div>
+            <div class="icon-user">
+                <i></i>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

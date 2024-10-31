@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baitap5</title>
+    <style>
+        .container{
+            width: 600px;
+            height: 600px;
+            border: 1px solid gray;
+            padding: 20px 20px 20px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        .header{
+            display: flex;
+            justify-content: space-between;  
+            height: 58px;                
+        }
+        .login-phone{
+            display: flex;
+            flex-direction: column;
+            p{
+                margin-bottom: 0px;
+                font-size: 25px;
+            }
+            input{
+                /* width: 350px; */
+                color: black;
+                /* height: 36px; */
+                height: 58px;
+                border-radius: 4px;
+                border: 1px solid #69A8FF;
+                /*  */
+                padding-left: 12px;
+                padding-right: 20px;
+                box-sizing: border-box; /* Đảm bảo không vượt ra ngoài khung */
+            }
+        }
+        .next-btn{
+            button{
+                background-color:#2563EB;
+                text-align: center;
+                /* height: 36px; */
+                height: 58px;
+                border-radius: 4px;
+                border: none;
+                width: 100%;
+                /*  */
+                font-size: 25px;
+                color: white;
+            }  
+        }
+        .or-divider {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #888; /* Màu chữ cho từ "Hoặc" */
+            font-weight: bold;
+            height: 58px;
+        }
+
+        .or-divider::before,
+        .or-divider::after {
+            content: "";
+            flex: 1; /* Để hai đường giãn ra đều hai bên */
+            border-bottom: 1px solid #ccc; /* Màu và độ dày của đường kẻ */
+            margin: 0 10px; /* Khoảng cách giữa từ "Hoặc" và đường kẻ */
+        }
+        .face-btn{
+            border: 1px solid gray;
+            border-radius: 4px;
+            display: flex;
+            /* flex-direction: column; */
+            justify-content: center;
+            align-items: center;
+            /* background-color: #50B83C; */
+            font-size: 20px;
+            input{
+                /* width: 350px; */
+                color: black;
+                height: 36px;
+                border-radius: 4px;
+                border: 1px solid #69A8FF;
+                /*  */
+                padding-left: 12px;
+                padding-right: 20px;
+                box-sizing: border-box; /* Đảm bảo không vượt ra ngoài khung */
+            }
+            img{
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                object-fit: cover;
+                /* 
+                Khi dùng object-fit: cover;, ảnh hoặc video sẽ:
+                Được phóng to hoặc thu nhỏ sao cho kích thước của nó vừa vặn với khung chứa.
+                Bị cắt một phần ở các cạnh nếu tỷ lệ của ảnh không khớp với tỷ lệ của khung chứa, 
+                nhưng đảm bảo phần trung tâm luôn hiển thị mà không bị méo.
+                */
+                padding-right: 10px;
+            }
+        }
+        .google-btn{
+            border: 1px solid gray;
+            border-radius: 4px;
+            display: flex;
+            /* flex-direction: column; */
+            justify-content: center;
+            align-items: center;
+            /* background-color: #50B83C; */
+            font-size: 20px;
+            input{
+                /* width: 350px; */
+                color: black;
+                height: 36px;
+                border-radius: 4px;
+                border: 1px solid #69A8FF;
+                /*  */
+                padding-left: 12px;
+                padding-right: 20px;
+                box-sizing: border-box; /* Đảm bảo không vượt ra ngoài khung */
+            }
+            img{
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                object-fit: cover;
+                /* 
+                Khi dùng object-fit: cover;, ảnh hoặc video sẽ:
+                Được phóng to hoặc thu nhỏ sao cho kích thước của nó vừa vặn với khung chứa.
+                Bị cắt một phần ở các cạnh nếu tỷ lệ của ảnh không khớp với tỷ lệ của khung chứa, 
+                nhưng đảm bảo phần trung tâm luôn hiển thị mà không bị méo.
+                */
+                padding-right: 10px;
+            }
+        }
+        .footer{
+            text-align: center;   
+            height: 58px;    
+            font-size: 20px;
+        }
+        .hightline{
+            color: #78A9EF;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Dang ky tai khoan</h1>
+            <h1>X</h1>
+        </div>
+        <div class="login-phone">
+            <p>So dien thoai</p>
+            <input type="number">
+        </div>
+        <div class="next-btn">
+            <button>Tiep Tuc</button>
+        </div>
+        <div class="or-divider">
+            <p>Hoac</p>
+        </div>
+        <div class="face-btn">
+            <img src="../../Image/ダウンロード.png" alt="">
+            <p>Dang nhap voi Facebook</p>
+        </div>
+        <div class="google-btn">
+            <img src="../../Image/google-logo.png" alt="">
+            <p>Dang Nhap voi Google</p>
+        </div>
+        <div class="footer">
+            <p>Ban da co tai khoan ?
+                <span class="hightline">Dang nhap</span>
+                tai day</p>
+        </div>
+    </div>
+</body>
+</html>

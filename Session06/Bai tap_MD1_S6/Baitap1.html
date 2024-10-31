@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baitap1</title>
+    <style>
+        .container{
+            width: 300px;
+            height: 100px;
+            background-color: aliceblue;
+            /*  */
+            display: flex;
+            margin: 5px;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .square-left{
+            width: 80px;
+            height: 80px;
+            background-color:red;
+            border-radius: 10px;
+        }
+        .circle{
+            width: 80px;
+            height: 80px;
+            background-color:blue;
+            border-radius: 50%;
+        }
+        .square-right{
+            width: 80px;
+            height: 80px;
+            background-color:red;
+            border-radius: 10px;
+
+        }
+        .square-left, .circle, .square-right {
+            /*  */
+            margin: 5px;
+            font-size: 8px;
+            color: white;
+            /*  */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /*  */
+        }        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="square-left">
+            <p>Hinh vuong trai</p>
+        </div>
+        <div class="circle">
+            <p>Hinh trong</p>
+        </div>
+        <div class="square-right">
+            <p>Hinh vuong phai</p>
+        </div>
+    </div>
+</body>
+</html>

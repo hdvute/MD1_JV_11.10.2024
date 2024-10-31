@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        *{
+            font-family: 'Arial', 'Helvetica', sans-serif; /* font chu thuoc ho chu khong co chan */
+        }
+        .container{
+            width: 800px;
+            height: 1100px;
+            border: 1px solid gray;
+            border-radius: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            /* ------ */
+            .header{
+                height: 25px;
+                background-color: grey;
+                color: white;
+                display: flex;
+                align-items: center;
+                padding-left: 20px;
+            }
+            .body1{
+                height: 250px;
+                /* background-color: aquamarine; */
+                padding-left: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                /*  */
+                h2, p{
+                    margin: 0;                    
+                }
+                .btn{
+                    display: flex;
+                    margin: 10px;
+                    gap: 10px;
+                    button{
+                        border: none;
+                        border-radius: 4px;
+                        height: 25px;
+                        width: 150px;
+                    }
+                    .btn1{
+                    background-color: blue;
+                    color: white;
+                    }
+                    .btn2{
+                        background-color: gray;
+                        color: white;
+                    }
+                }
+            }
+            .body2{
+                background-color:#F8F9FA ;
+                height: 800px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                flex-wrap: wrap;
+                /* --- */
+                .box{
+                    border: 1px solid gray;
+                    border-radius: 4px;
+                    width: 230px;
+                    height: 350px;                    
+                }
+                .image{
+                    background-color:white;
+                    width: 230px;
+                    height: 200px;
+                    display: flex;
+                    justify-content: center;
+                    img{
+                        height: 200px;
+                        width: auto;
+                        object-fit: cover; /* Cắt và điều chỉnh hình ảnh sao cho chiếm toàn bộ khung */
+                    }                    
+                }
+                .content{
+                        width: 230px;
+                        height: 150px;
+                        /* background-color: red; */                        
+                        /*  */
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                    }
+                .content-ref{
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+                .image-footer{
+                    /* width: 230px; */
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    display: flex;
+                    justify-content: space-between;
+                }
+                .button{
+                    display: flex;
+                    height: 100%;
+                    align-items: center;
+                    button{
+                        height: 25px;
+                    }
+                }
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- -------------------------------- -->
+        <div class="header">         
+            <p><i class="fas fa-thin fa-camera"></i> Album</p>
+        </div>
+        <!-- -------------------------------- -->
+         <div class="body1">
+            <h2>Album example</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur
+                Lorem ipsum, dolor sit 
+                Lorem ipsum dolor sit amet.
+            </p>
+            <div class="btn">
+                <button class="btn1">Main call to action</button>
+                <button class="btn2">Secondary action</button>
+            </div>            
+         </div>
+        <!-- -------------------------------- -->
+         <div class="body2">
+            <!-- ======================= -->
+            <div class="box">
+                <div class="image">                    
+                    <img src="../../Image/google-logo.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="content-ref">
+                        <p>
+                            Lorem ipsum dolor sit 
+                            Lorem ipsum dolor
+                            Lorem, ipsum                      
+                        </p>
+                    </div>
+                    <div class="image-footer">
+                        <div class="button">
+                            <button>View</button>
+                            <button>Edit</button>
+                        </div>
+                        <p>9 mins</p>    
+                    </div>
+                </div>
+            </div>
+            <!-- ======================= -->
+             <!-- ======================= -->
+            <div class="box">
+                <div class="image">                    
+                    <img src="../../Image/google-logo.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="content-ref">
+                        <p>
+                            Lorem ipsum dolor sit 
+                            Lorem ipsum dolor
+                            Lorem, ipsum                      
+                        </p>
+                    </div>
+                    <div class="image-footer">
+                        <div class="button">
+                            <button>View</button>
+                            <button>Edit</button>
+                        </div>
+                        <p>9 mins</p>    
+                    </div>
+                </div>
+            </div>
+            <!-- ======================= -->
+             <!-- ======================= -->
+            <div class="box">
+                <div class="image">                    
+                    <img src="../../Image/google-logo.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="content-ref">
+                        <p>
+                            Lorem ipsum dolor sit 
+                            Lorem ipsum dolor
+                            Lorem, ipsum                      
+                        </p>
+                    </div>
+                    <div class="image-footer">
+                        <div class="button">
+                            <button>View</button>
+                            <button>Edit</button>
+                        </div>
+                        <p>9 mins</p>    
+                    </div>
+                </div>
+            </div>
+            <!-- ======================= -->
+             <!-- ======================= -->
+            <div class="box">
+                <div class="image">                    
+                    <img src="../../Image/ダウンロード.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="content-ref">
+                        <p>
+                            Lorem ipsum dolor sit 
+                            Lorem ipsum dolor
+                            Lorem, ipsum                      
+                        </p>
+                    </div>
+                    <div class="image-footer">
+                        <div class="button">
+                            <button>View</button>
+                            <button>Edit</button>
+                        </div>
+                        <p>9 mins</p>    
+                    </div>
+                </div>
+            </div>
+            <!-- ======================= -->
+             <!-- ======================= -->
+            <div class="box">
+                <div class="image">                    
+                    <img src="../../Image/ダウンロード.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="content-ref">
+                        <p>
+                            Lorem ipsum dolor sit 
+                            Lorem ipsum dolor
+                            Lorem, ipsum                      
+                        </p>
+                    </div>
+                    <div class="image-footer">
+                        <div class="button">
+                            <button>View</button>
+                            <button>Edit</button>
+                        </div>
+                        <p>9 mins</p>    
+                    </div>
+                </div>
+            </div>
+            <!-- ======================= -->
+             <!-- ======================= -->
+            <div class="box">
+                <div class="image">                    
+                    <img src="../../Image/ダウンロード.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="content-ref">
+                        <p>
+                            Lorem ipsum dolor sit 
+                            Lorem ipsum dolor
+                            Lorem, ipsum                      
+                        </p>
+                    </div>
+                    <div class="image-footer">
+                        <div class="button">
+                            <button>View</button>
+                            <button>Edit</button>
+                        </div>
+                        <p>9 mins</p>    
+                    </div>
+                </div>
+            </div>
+            <!-- ======================= -->
+         </div>
+        <!-- -------------------------------- -->
+    </div>
+</body>
+</html>

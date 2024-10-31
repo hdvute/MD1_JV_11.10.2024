@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- 
+flexbox
+
+-->
+<style>
+    .container{
+        height: 500px;
+        background-color: rgb(114, 227, 227);
+        display: flex; /*Khai bao su dung flexbox => tat ca cac phan tu con nam tren cung mot hang*/
+        flex-direction: row; /*Mac dinh main axis là row  ===>>>> Hướng theo chiều ngang hoặc chiều dọc */
+        /* flex-direction: column; Chuyển main axis thành column */
+        justify-content: center;
+        /* justify-content: space-between; */
+        /* justify-content: space-around; */
+        /* Justify content sẽ ăn theo trục  main-axis */
+        /* Align-items sẽ ăn theo trục cross axis */
+        align-items: center;
+        /* align-items:first baseline; */
+        /* align-items: end; */
+        flex-wrap: wrap;
+        /* wrap : sự tự động xuống dòng thì dòng trên full */
+        /* Nếu không dùng Wrap thì kích thước sẽ bị chia đều nếu nó vượt kích cỡ -> bị thu nhỏ lại */
+
+    }
+    .item{
+        display: flex;
+        height: 50px;
+        background-color: brown;
+        margin: 5px;
+        width: 100px;
+    }
+    .item1{
+        display: flex;
+        height: 50px;
+        background-color: blue;
+        margin: 5px;
+        width: 100px;
+    }
+    .chirld1{
+        background-color: yellow;
+    }
+    .chirld2{
+        background-color: violet;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="item">
+            <div class="chirld1">11</div>
+            <div class="chirld2">22</div>
+        </div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+    </div>
+</body>
+</html>
