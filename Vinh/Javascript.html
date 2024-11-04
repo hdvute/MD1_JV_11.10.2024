@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+Nhap ten: <input id="input" value>
+<br>
+<button onclick="xinchao()">OK</button>
+<div id="div"></div>
+<script>
+    var xinchao = function() {
+        // var ten = document.getElementById("input").value
+        // var loi_chao = document.write("Hello ",document.getElementById("input").value).innerHTML
+        var ten = document.getElementById("input").value
+        // var loi_chao = "xin chao " + ten
+        document.getElementById("div").innerHTML = "Xin chao " + document.getElementById("input").value
+        // document.getElementById("loi_chao").innerHTML = loi_chao
+        // document.write(document.write("Hello ",document.getElementById("input").value).innerHTML)
+    }
+    
+</script>
+<body>
+    
+</body>
+</html>

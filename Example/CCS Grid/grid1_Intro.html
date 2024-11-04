@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCS_Grid_Intro</title>
+    <style>
+        .grid-container{
+            display: grid;
+            grid-template-areas: 
+            "header header header header header header"
+            "menu main main main right right"
+            "menu footer footer footer footer footer";
+            gap: 10px;/* Khoảng cách giữa các ô */
+            background-color: #2196F3;
+            padding: 10px;
+            /* 
+                grid-template-columns: 1fr 1fr 1fr; Chia thành 3 cột đều nhau 
+                grid-template-rows: auto 1fr auto; /* Tự động chia chiều cao cho header và footer 
+                min-height: 100vh; /* Để layout chiếm toàn bộ chiều cao màn hình
+            */            
+        }
+        .Header { grid-area: header; }
+        .menu { grid-area: menu; }
+        .main { grid-area: main; }
+        .right { grid-area: right; }
+        .footer { grid-area: footer; }
+        .Header, .menu, .main, .right, .footer{
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }   
+        /* .grid-container > div{
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }     */
+    </style>
+</head>
+<body>
+    <h1>Grid Layout</h1>
+    <p>
+        The CSS Grid Layout Module offers a grid-based layout system,
+        with rows and columns, making it easier to design web pages without having to use floats and positioning:
+    </p>
+    <div class="grid-container">
+        <div class="Header">Header</div>
+        <div class="menu">Menu</div>
+        <div class="main">Main</div>
+        <div class="right">Right</div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>

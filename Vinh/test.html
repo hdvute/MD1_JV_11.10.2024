@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<style>
-    .icon{
-        position: relative;
-        bottom: 500px;
-        left: 0;
-    }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
 <body>
-   <div class="icon">
-    <i class="fa-solid fa-chevrons-right"></i>
-   </div> 
+  <script>
+    // Gán giá trị cho các biến
+let mathScore = prompt("Hay nhap diem mon toan: ")
+let physicsScore = 90;
+let chemistryScore = 78;
+
+// Tính điểm trung bình
+let averageScore = (mathScore + physicsScore + chemistryScore) / 3;
+
+// In ra kết quả
+console.log("Điểm trung bình là:", averageScore);
+
+  </script>
 </body>
 </html>

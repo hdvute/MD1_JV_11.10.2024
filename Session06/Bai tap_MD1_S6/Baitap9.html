@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baitap9</title>
+    <style>
+        .container{
+            width: 1660px;
+            height: auto;
+            background-color:rgb(207, 218, 227);
+            border: 1px solid gray;
+            display: grid;
+            gap: 20px;
+            grid-template-areas:
+                "box box box box";  
+            justify-content: start; /* Canh lề trái cho hàng ngang */  
+            padding: 20px;             
+        }
+        .box{
+            width: 400px;
+            height: 720px;
+            background-color: antiquewhite;
+        }
+        .box-image{
+                    background-color:white;
+                    width: 400px;
+                    height: 350px;
+                    display: flex;
+                    justify-content: center;  
+                    align-items: center; /* Căn giữa hình ảnh theo chiều dọc */
+                    overflow: hidden; /* Đảm bảo không tràn hình ra ngoài */                                      
+        }
+        .box-image img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover; /* Cắt và điều chỉnh hình ảnh sao cho chiếm toàn bộ khung */
+        }
+        .box-content1, .box-content2 {
+            padding-left: 10px;
+        }
+        .box-footer{
+            height: 50px;
+            background-color: aqua;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items:center;                      
+        }
+        .box-footer button{
+            height: 40px;
+            width: 120px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- --------------------------- -->
+        <div class="box">
+            <div class="box-image">
+                <img src="../../Image/bds.jpg" alt="">
+            </div>
+            <div class="box-content1">
+                <p><b>The manhattan glory</b></p>
+            </div>
+            <div class="box-content2">
+                <p>👌 dia chi</p>
+                <p>👌 dien tich</p>
+                <p>👌 Muc dich su dung</p>
+            </div>
+            <div class="box-footer">
+                <p>20 ty</p>
+                <button>Xem chi tiet »</button>
+            </div>
+        </div>
+        <!-- --------------------------- -->
+         <!-- --------------------------- -->
+        <div class="box">
+            <div class="box-image"></div>
+            <div class="box-content"></div>
+            <div class="box-footer"></div>
+        </div>
+        <!-- --------------------------- -->
+         <!-- --------------------------- -->
+        <div class="box">
+            <div class="box-image"></div>
+            <div class="box-content"></div>
+            <div class="box-footer"></div>
+        </div>
+        <!-- --------------------------- -->
+         <!-- --------------------------- -->
+        <div class="box">
+            <div class="box-image"></div>
+            <div class="box-content"></div>
+            <div class="box-footer"></div>
+        </div>
+        <!-- --------------------------- -->
+    </div>
+</body>
+</html>

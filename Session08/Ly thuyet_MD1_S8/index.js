@@ -1,0 +1,1 @@
+alert("Viet code javascript theo cách external")
