@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    Viết chương trình yêu cầu người dùng nhập vào một số nguyên dương bất kỳ,
+    tính toán giai thừa của số vừa nhập và in ra màn hình console.
+    -->
+    <script>        
+        let intNumber = Number(prompt("Ban hay nhap vao mot so nguyen duong bat ky nho hon 100"));
+        let result = 1;
+        if(intNumber > 0 && intNumber < 100){
+            let i = intNumber;
+            while (i>0) {
+                result *= i;
+                i--;
+            }
+            console.log(result)
+            console.log("Giai thua cua " + intNumber + " la " + result);
+            
+        }else if(intNumber == 0) {
+            console.log("Giai thua cua 0 la 1");            
+        }else{
+            console.log("Ban phai nhap so nguyen duong nho hon 100");
+        }
+    </script>
+</body>
+</html>

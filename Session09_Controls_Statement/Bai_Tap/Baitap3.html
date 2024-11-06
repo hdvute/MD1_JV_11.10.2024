@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    Viết chương trình yêu cầu nhập vào một số và hiển thị ngày trong tuần tương ứng với số vừa nhập. 
+    Khi người dùng nhập 2 thì hiển thị monday, 3 thì hiển thị tuesday,... 8 thì hiển thị sunday, 
+    bất kỳ giá trị nào khác thì hiển thị không hợp lệ.
+    -->
+    <script>
+        let day = Number(prompt("Ban hay nhap mot so bat ki tu 2 toi 8"));
+        switch (day) {
+            case 2:
+                console.log("Monday");                
+                break;
+            case 3:
+                console.log("Tuesday");                
+                break;
+            case 4:
+                console.log("Wednesday");                
+                break;
+            case 5:
+                console.log("Thursday");                
+                break;
+            case 6:
+                console.log("Friday");                
+                break;
+            case 7:
+                console.log("Saturday");                
+                break;
+            case 8:
+                console.log("Sunday");                
+                break;
+            default: 
+                console.log("Ban phai nhap so tu 2 toi 8");            
+        }
+    </script>
+</body>
+</html>

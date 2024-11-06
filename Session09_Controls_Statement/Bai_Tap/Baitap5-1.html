@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        Viết chương trình yêu cầu người dùng nhập vào một số nguyên dương bất kỳ,
+        in ra các số nguyên dương từ 1 đến số vừa nhập lên màn hình console.
+    -->
+        <script>
+            let intNumber = Number(prompt("Ban hay nhap mot so nguyen duong bat ky"));
+            if (intNumber>0) {
+                for (let i = 0; i <= intNumber; i++) {
+                    console.log(i); 
+                    if(i==100){
+                        break;
+                    }             
+                }
+            }else{
+                console.log("Ban phai nhap so nguyen lon hon 0");                
+            }
+        </script>
+</body>
+</html>

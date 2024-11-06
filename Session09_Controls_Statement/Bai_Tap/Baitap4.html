@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    Viết chương trình yêu cầu nhập vào một số, 
+    sử dụng toán tử 3 ngôi để hiển thị xem số đó là số âm hay số dương.
+    -->
+    <script>
+        let number = prompt("Ban hay nhap vao mot so bat ki:");
+        if(!isNaN(number)&& number.trim()!==""){
+            number = parseInt(number);
+            // Toan tu 3 ngoi
+            number%2==0 ? console.log(number +" la so chan") : console.log(number+ " la so le");                        
+        }else{
+            console.log("so ban nhap vao khong hop le");            
+        }
+    </script>
+</body>
+</html>

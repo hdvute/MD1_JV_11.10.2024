@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // const currentYear = 2024;
+        const currentYear = new Date().getFullYear();
+        let yearOfBirth = prompt("ban sinh nam bao nhieu: ");
+        // kiem tra xem gia tri nhap vao co phai so hay khong
+        // kiem tra xem chuoi nhap vao co phai chuoi trong khong , khi da cat khoang trong dau va cuoi
+        if(!isNaN(yearOfBirth) && yearOfBirth.trim()!==""){
+            if(yearOfBirth<1900){
+                alert("Nam sinh ban nhap khong hop le, phai lon hon 1900");
+            }else if(yearOfBirth>currentYear){
+                alert("Nam sinh ban nhap vao khong hop le, phai nho hon "+currentYear);
+            }else {
+                yearOfBirth=parseInt(yearOfBirth);            
+                // lay gia tri nam hien tai gan vao currentYear
+                const age = currentYear - yearOfBirth;
+                alert("ban nam nay "+age+" tuoi.");
+            }                      
+        }else{
+            alert("Gia tri ban nhap vao khong hop le");
+        }
+    </script>
+</body>
+</html>
