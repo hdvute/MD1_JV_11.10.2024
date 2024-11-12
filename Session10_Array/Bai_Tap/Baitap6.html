@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    Viết chương trình khai báo mảng số nguyên gồm nhiều phần tử bất kỳ,
+    tiến hành di chuyển các phần tử âm lên đầu mảng, phần tử dương về cuối mảng và in kết quả ra màn hình console.
+    -->
+    <script>
+        let array = [-1,2,2,2,2,-4,-5,-6,0,0,1,2,3,4,5,6,7,8,9,-1,-2,-3,-5,-6,-7];
+        let negativeArray = [];
+        let positiveArray = [];
+        for (let value of array){
+            if(value<0){
+                negativeArray.push(value);
+            }else{
+                positiveArray.push(value);
+            }
+        }
+        let sortedArray = negativeArray.concat(positiveArray);
+        console.log(array.join(", ")+"\n"+"Sap xep lai thanh: \n"+sortedArray.join(", "));
+    </script>
+</body>
+</html>

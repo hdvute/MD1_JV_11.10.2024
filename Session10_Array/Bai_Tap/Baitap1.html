@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    Viết chương trình khai báo 1 mảng gồm các phần tử bất kỳ, Tiến hành in ra các phần tử là số nguyên trong mảng,
+    nếu không có số nguyên nào thì hiển thị “Trong mảng không tồn tại số nguyên” lên màn hình console.
+    -->
+    <script>
+        let array = ["a",1,2,3,4,"b","c","d",5,6,7,8,"e","f","g",9,10,"h","i",];
+        // let array = [1,2,3,4,5,6,7]
+        // let array = ["1","1","1","1","1","1","1","1",]
+        let arrayInteger = [];//tạo một mảng trống để chứa các số nguyên
+        let flag = false;
+        for(let value of array){
+            // Kiểm tra số nguyên
+            if(Number.isInteger(value)){
+                flag = true;
+                arrayInteger.push(value);
+            }
+        }
+        if(flag){
+            alert("Các số nguyên trong mảng là \n" + arrayInteger.join(", "));
+        }else{
+            alert("Trong mảng không có số nguyên nào");
+        }
+    </script>
+</body>
+</html>

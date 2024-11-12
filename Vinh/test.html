@@ -7,16 +7,21 @@
 </head>
 <body>
   <script>
-    // Gán giá trị cho các biến
-let mathScore = prompt("Hay nhap diem mon toan: ")
-let physicsScore = 90;
-let chemistryScore = 78;
+let array = []; // Khởi tạo mảng rỗng
 
-// Tính điểm trung bình
-let averageScore = (mathScore + physicsScore + chemistryScore) / 3;
+for (let i = 0; i < 10; i++) {
+    let number = parseInt(prompt(`Nhập vào số nguyên thứ ${i + 1}: `));
+    
+    // Kiểm tra nếu đầu vào là số nguyên hợp lệ
+    if (!isNaN(number)) {
+        array.push(number); // Thêm số nguyên vào cuối mảng
+    } else {
+        console.log("Giá trị nhập vào không phải là số nguyên. Vui lòng thử lại.");
+        i--; // Giảm i để yêu cầu người dùng nhập lại
+    }
+}
 
-// In ra kết quả
-console.log("Điểm trung bình là:", averageScore);
+console.log("Mảng bạn đã nhập là:", array);
 
   </script>
 </body>

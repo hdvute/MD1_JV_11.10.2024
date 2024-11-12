@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    Viết chương trình yêu cầu nhập vào hai số nguyên dương a và b, lưu các số chia hết cho b trong khoảng từ 1 đến a 
+    hoặc các số chia chia hết cho a trong khoảng từ 1 đến b vào một mảng và in mảng đó ra màn hình console.
+    -->
+    <script>
+        let numberA = 0
+        let numberB = 0
+        do {
+            numberA = +prompt("Nhap vao so nguyen duong a : ")                    
+        } while (numberA<=0 || !Number.isInteger(numberA))
+        
+        do {
+            numberB = +prompt("Nhap vao so nguyen duong b khac "+numberA)                       
+        } while (numberB<=0 || !Number.isInteger(numberB)||numberB==numberA)
+        if(numberA>numberB){
+            let result =[];
+            let flag = false;
+            for(let i= numberB; i<=numberA;i++){
+                if(i%numberB==0){
+                    result.push(i)
+                    flag=true;
+                }
+            }
+            if(flag){
+                console.log("Cac so tu "+numberB+" toi "+ numberA+" ma chia het cho "+numberB+" la "+ result.join(" ,"));
+            }
+        }else if(numberA<numberB){
+            let result =[];
+            let flag = false;
+            for(let i= numberA; i<=numberB;i++){
+                if(i%numberA==0){
+                    result.push(i)
+                    flag=true;
+                }
+            }
+            if(flag){
+                console.log("Cac so tu "+numberA+" toi "+ numberB+" ma chia het cho "+numberA+" la "+ result.join(" ,"));
+            }
+        }else{
+            console.log("Error");            
+        }
+    </script>
+</body>
+</html>

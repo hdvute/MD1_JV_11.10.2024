@@ -5,20 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-Nhap ten: <input id="input" value>
-<br>
-<button onclick="xinchao()">OK</button>
-<div id="div"></div>
+<!-- Nhap ten: <input id="input" value> -->
+<!-- <br> -->
+<!-- <button onclick="xinchao()">OK</button> -->
+<!-- <div id="div"></div> -->
 <script>
-    var xinchao = function() {
-        // var ten = document.getElementById("input").value
-        // var loi_chao = document.write("Hello ",document.getElementById("input").value).innerHTML
-        var ten = document.getElementById("input").value
-        // var loi_chao = "xin chao " + ten
-        document.getElementById("div").innerHTML = "Xin chao " + document.getElementById("input").value
-        // document.getElementById("loi_chao").innerHTML = loi_chao
-        // document.write(document.write("Hello ",document.getElementById("input").value).innerHTML)
+        var xinchao = function() {
+            // var ten = document.getElementById("input").value
+            // var loi_chao = document.write("Hello ",document.getElementById("input").value).innerHTML
+            var ten = document.getElementById("input").value
+            // var loi_chao = "xin chao " + ten
+            document.getElementById("div").innerHTML = "Xin chao " + document.getElementById("input").value
+            // document.getElementById("loi_chao").innerHTML = loi_chao
+            // document.write(document.write("Hello ",document.getElementById("input").value).innerHTML)
+        }
+    // ======================================================================================================
+    // =================    Loop For    =====================================================================
+    // Example 1
+    const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+    document.write("Javascript For Look <br>")
+    for(let i=0; i<cars.length; i++){
+        document.write(cars[i]+"<br>");
     }
+    // Example 2
+    for(let i=10;i>=0;i--){
+        document.write("gia tri i= "+i+"<br>");
+    }
+    // Example 3
+    document.write("======================================= <br>");
+    const list1 = ["No.0","No.1","No.2","No.3","No.4","No.5","No.6","No.7","No.8","No.9","No.10"];
+    const list2 = ["A","B","C","D","E","F","J","K","L","M","N","I","J"];
+    if(list1.length == list2.length){
+        for(let i=0;i<list1.length;i++){
+            document.write(list1[i]+" : "+list2[i]+"<br>");
+        }            
+    }else if(list1.length>list2.length){
+        let i = 0
+        for(i=0;i<list2.length;i++){
+            document.write(list1[i]+" : "+list2[i]+"<br>");
+        }
+        for(let j=i;j<list1.length;j++){
+            document.write(list1[j]+" : "+"ー"+"<br>");
+        }
+    }else if(list1.length<list2.length){
+        let i = 0
+        for(i=0;i<list1.length;i++){
+            document.write(list1[i]+" : "+list2[i]+"<br>");
+        }
+        for(let j=i;j<list2.length;j++){
+            document.write("ー"+" : "+list2[j]+"<br>");
+        }
+    }
+        document.write(list1.join(),"<br>");//,
+        document.write(list1.join(""),"<br>");//
+        document.write(list1.join(" "),"<br>");//
+    // ======================================================================================================
+    // =================    Loop For    =====================================================================
+    
+    // ======================================================================================================
+    // =================    Loop For    =====================================================================
+    
+    // ======================================================================================================
+    // =================    Loop For    =====================================================================
+    
+    // ======================================================================================================
+    // =================    Loop For    =====================================================================
+    
+    // ======================================================================================================
+    // =================    Loop For    =====================================================================
+    
     
 </script>
 <body>
