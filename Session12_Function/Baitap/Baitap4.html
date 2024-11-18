@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        Viết chương trình yêu cầu người dùng nhập vào 1 chuỗi và 1 ký tự bất kỳ, xây dựng hàm có 2 tham số là 1 chuỗi và 1 ký tự, 
+        đếm số lần xuất hiện của ký tự trong chuỗi. 
+        Gọi hàm với chuỗi và ký tự đã nhập và in kết quả ra màn hình.
+    -->
+    <script>
+        //yeu cau nguoi dung nhap vao 1 string va 1 character
+        let stringInput = prompt("Ban hay nhap vao mot chuoi");
+        let character = prompt("Ban tiep tuc nhap vao mot ki tu");
+        // xay dung ham co 2 tham so la 1 chuoi va 1 ki tu => dem so lan xuat hien cua ky tu trong chuoi
+        function countTheNumber (string,character) {
+            let index=0;
+            for(let i=0;i<string.length;i++){
+                if (string[i]==character){
+                    index++;
+                }
+            }
+            return index;
+        }
+        console.log(`so lan xuat hien ki tu ${character} la ${countTheNumber(stringInput,character)}`)
+        
+    </script>
+</body>
+</htm

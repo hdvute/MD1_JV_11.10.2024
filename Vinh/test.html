@@ -6,23 +6,23 @@
   <title>Document</title>
 </head>
 <body>
-  <script>
-let array = []; // Khởi tạo mảng rỗng
+   <script>
+    // Khai báo chuỗi bất kỳ
+let string = "bai tap so 3";
 
-for (let i = 0; i < 10; i++) {
-    let number = parseInt(prompt(`Nhập vào số nguyên thứ ${i + 1}: `));
-    
-    // Kiểm tra nếu đầu vào là số nguyên hợp lệ
-    if (!isNaN(number)) {
-        array.push(number); // Thêm số nguyên vào cuối mảng
-    } else {
-        console.log("Giá trị nhập vào không phải là số nguyên. Vui lòng thử lại.");
-        i--; // Giảm i để yêu cầu người dùng nhập lại
+// Hàm có tham số là một chuỗi, trả về số ký tự không bao gồm khoảng trắng
+function lengthString(string) {
+    let sum = 0; // Khởi tạo biến đếm
+    for (let i = 0; i < string.length; i++) {
+        if (string[i] !== " ") { // Bỏ qua khoảng trắng
+            sum++;
+        }
     }
+    return sum; // Trả về số ký tự
 }
 
-console.log("Mảng bạn đã nhập là:", array);
+console.log(lengthString(string)); // Kết quả: 9
 
-  </script>
+   </script>
 </body>
 </html>

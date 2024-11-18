@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        Viết chương trình khai báo 3 số ngẫu nhiên, xây dựng hàm kiểm tra chẵn lẻ và gọi hàm với mỗi số đã khai báo, 
+        in kết quả ra màn hình console.
+    -->
+    <script>
+        //khai bao 3 so ngau nhien
+        let num1 = 12;
+        let num2 = 13;
+        let num3 = 14;
+        //xay dung ham kiem tra chan le
+        function checkEvenOdd(number){
+            if(number % 2 == 0){
+                return `${number} la so chan\n`
+            } else {
+                return `${number} la so le \n`
+            }
+        }
+        console.log(checkEvenOdd(num1));
+        console.log(checkEvenOdd(num2));
+        console.log(checkEvenOdd(num3));        
+    </script>
+</body>
+</html>

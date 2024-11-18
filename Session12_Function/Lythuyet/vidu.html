@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* return trong ham
+                dừng và thoát khỏi function
+                trả về kết quả
+        */
+       
+    //    giả sử người dùng đi mua hàng
+        // khi them sản phẩm vào giỏ hàng
+        // kiểm tra xem sản phẩm đã có trong giỏ hàng hay chưa
+        // Nếu có tăng số lượng, chưa có thì thêm bình thường
+
+        //  khong the so sanh 2 mang
+        // let carts = [["mi tom",3],["nuoc xuc mieng",1]];
+        // function addToCart(product){
+        //     let checkProduct = carts.indexOf(product);
+        //     if (checkProduct == -1){
+        //         carts.push([product,1]);
+        //     }else{
+        //         carts[checkProduct][1]++;
+        //     }
+        // }
+        // addToCart("chinsu");
+        // addToCart("mi tom");
+        // console.log(carts);
+        let carts = [["mi tom",3],["nuoc xuc mieng",1]];
+        function addToCart(product){        
+            let flag = -1;
+                for (let i=0;i<carts.length; i++){
+                    if(carts[i][1] == product){
+                        flag=i;
+                        break;
+                    }
+                }
+                if(flag==-1){
+                    carts.push([product][1]);
+                }else{
+                    carts[flag][i]++;
+                }
+        }
+        addToCart("chin su");
+        console.log(carts);
+        
+    </script>
+</body>
+</html>

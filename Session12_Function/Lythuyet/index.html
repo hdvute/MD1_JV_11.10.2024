@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        Công dụng của hàm:
+            Giúp tổ chức code gọn gàng, nhằm phục vụ 1 nhiệm vụ, chức năng nhất dịnh
+            giúp tái sữ dụng code
+
+            Các hàm hay dùng:
+            1. hàm bình thường (declaration)
+            2. hàm mũi tên (arrow function)
+    -->
+    <script>
+        // Khai báo hàm bình thường
+        function sayHello(){
+            console.log("xin chào cả thế giới")
+        }
+        // muốn thực hiện thì phải gọi hàm ra
+        sayHello();
+
+        let result = () =>{
+            console.log("hàm arrow function")
+        }
+        result();
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    
+    -->
+    <script>
+        function kiemTraSoNguyenTo(number){
+            let count = 0;
+            for(let i=1;i<=number;i++){
+
+                if(number%i==0){
+                    count++
+                }
+            }
+            if(count == 2){
+                // la so nguyen to
+                return true
+            }else{
+                return false
+            }
+        }
+        // chuong trinh kiem tra so nguyen to
+        function showPrime(a,b){
+            for (i=a;i<=b;i++){
+                if(kiemTraSoNguyenTo(i)){
+                    console.log(`${i} la so nguyen to`);                    
+                }
+            }
+        }
+        showPrime(15,100);
+    </script>
+</body>
+</html>

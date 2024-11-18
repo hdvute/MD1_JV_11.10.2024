@@ -51,7 +51,6 @@ console.log("Quả chuối có tồn tại trong mảng ArrayString hay ko ? ",c
 array.indexOf(); // lấy ra vị trí theo giá trị , trả về -1 nếu giá trị ko tồn tại
 let IndexOfQuaDao = arrayString.indexOf("quả đo"); // vị trí = 2
 console.log( "Vị trí quả đào  = ",IndexOfQuaDao);
-
 array.join(); // nối mảng thành chuỗi 
 console.log(" nối mảng thành chuỗi cách nhau bởi dấu  '-'  : ", array.join("-"));
 

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        tham số (pram) va đối số (argument)
+        Tham số và đối số giúp hàm có khả năng tái sữ dụng
+
+        Khi gọi hàm truyền giá trị thì gọi đó là đối số
+        
+    -->
+</body>
+    <script>
+        function sayHello(a,b){
+            console.log("xin chào ", a, "năm nay", b, "tuổi");
+            
+        }
+        sayHello("Hoa, 21");
+
+        // Viết chương trình tính tổng 2 số a và b
+        function sum (numberA, numberB){
+            console.log("tổng của 2 số ", numberA+numberB);            
+        }
+        sum(7,5);
+
+        // Viết chương trình cho người dùng đăng kí tài khoản email với điều kiện, email không được trùng
+        let emails =[];
+        function checkEmail(email){
+            let indexEmail = emails.indexOf(email);
+            if(indexEmail == -1){
+                emails.push(email)
+                console.log("dang ki thanh cong");
+            }else{
+                console.log("tai khoan da duoc dang ki");
+            }
+        }
+        checkEmail("hoa@gmail.com");
+        checkEmail("lan@gmail.com");
+        checkEmail("hoa@gmail.com");
+
+        // indexOf là một phương thức được sử dụng để tìm vị trí đầu tiên (chỉ số) của một phần tử trong một mảng hoặc một chuỗi. 
+        // Nếu phần tử không tồn tại, phương thức sẽ trả về -1.
+    </script>
+</html>

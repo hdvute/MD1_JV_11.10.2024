@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        Viết chương trình khai báo mảng gồm nhiều chuỗi bất kỳ, yêu cầu người dùng nhập vào 1 chuỗi bất kỳ. 
+        Xây dựng hàm có 2 tham số là 1 mảng và 1 chuỗi, 
+        kết quả trả về là tất cả các phần tử trong mảng có chứa chuỗi vừa nhập. In kết quả trả về ra màn hình.
+    -->
+    <script>
+        // Khai bao mang gom nhieu chuoi 
+        let arrayString = ["phan tu thu 1","phan tu thu 2","phan tu thu 3","phan tu thu 4","phan tu thu 5","phan tu thu 6","phan tu thu 7"];
+        // yeu cau nguoi dung nhap vao 1 chuoi bat ky
+        let stringIn = prompt("ban hay nhap vao mot chuoi bat ki");
+        // xay dung ham co 2 tham so la 1 mang va 1 chuoi
+        function filterString(array,string){
+            let result = []            
+            // result.push(array.filter(item => item.includes(string)));
+            result.push(array.filter(item => item.toLowerCase().includes(string.toLowerCase())));
+            return result
+        }
+        let result = filterString(arrayString,stringIn);
+        console.log(result.join(", "));              
+    </script>
+</body>
+</html>

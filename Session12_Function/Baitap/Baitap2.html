@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        Viết chương trình khai báo mảng gồm các thành phần ngẫu nhiên, 
+        xây dựng hàm nhận có tham số là 1 mảng và kết quả trả về là phần tử có độ dài lớn nhất trong mảng đó. 
+        Gọi hàm với mảng đã khai báo và in kết quả ra màn hình.
+    -->
+    <script>
+        // khai bao mang gom cac phan tu ngau nhien
+        let array = ["hoa","duyen","hung","tuan","an","ho va ten"]
+        // xay dung ham co tham so la 1 mang -> tra ve phan tu co do dai lon nhat trong mang do
+        function findLongestElement(array){
+            let index = 0;
+            let lengthMax = array[0].length;
+            for(let i = 1; i < array.length; i ++){
+                if(array[i].length > lengthMax){
+                    lengthMax = array[i].length;
+                    index = i;
+                }
+            }
+            return index
+        }
+        let index = findLongestElement(array);
+        console.log("phan tu co chieu dai lon nhat la ",array[index]);
+        
+    </script>
+</body>
+</html>

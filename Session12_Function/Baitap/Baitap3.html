@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        Viết chương trình khai báo chuỗi bất kỳ, xây dựng hàm có tham số là 1 chuỗi và kết quả trả về là số ký tự trong chuỗi đó 
+        ( không tính ký tự trống). 
+        Gọi hàm với chuỗi đã khai báo và in kết quả ra màn hình.
+    -->
+    <script>
+        // khai bao chuoi bat ki
+        let string = "bai tap so 3----"
+        // xay dung ham co tham so la 1 chuoi, tra ve so ky tu cua chuoi
+        function lengthString(string){
+            let sum=0;
+            for(let i=0;i<string.length;i++){
+                if(string[i] !==" "){
+                    sum++;
+                }
+            }
+            return sum;
+        }
+        console.log("so ki tu cua chuoi la", lengthString(string));
+    </script>
+</body>
+</html>
