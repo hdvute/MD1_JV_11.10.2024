@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        Bài 4: Cho mảng sau:
+        let arr=[1,2,3,4,5,6,7,8,9,10]
+        Viết hàm trả về tất cả các cặp số có tổng bằng 10
+    -->
+    <script>
+        let arr=[1,2,3,4,5,6,7,8,9,10];
+        let arrSum10 =[];
+        function sum10(array){
+            let arrSum10 =[];
+            for(let i=0;i<array.length;i++){
+                let sum = 0;
+                for(let j=i+1;j<array.length;j++){
+                    sum = array[i]+array[j];
+                    if(sum==10){
+                        arrSum10.push(array[i], array[j]);
+                    }
+                }
+            }
+            return arrSum10;
+        }
+        arrSum10 = sum10(arr);
+        if(arrSum10.length<2){
+            console.log("Error");
+        }else{
+            console.log(`Cac cap so co tong bang 10 la: \n`);
+            for(let i=0;i<arrSum10.length;i++){
+                console.log(arrSum10[i]+" va "+ arrSum10[i+1]+"\n");     
+                i++;           
+            }   
+        }
+    </script>
+</body>
+</html>

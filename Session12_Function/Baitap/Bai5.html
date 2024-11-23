@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        Bài 5:  Cho người dùng nhập vào chuỗi kí tự. Viết hàm kiểm tra xem tần suất xuất hiện của mỗi ký tự và in ra chúng
+                Input: “Hello H World”
+                Output: ki tu H xuat hien 1 lan
+                        .....
+    -->
+    <script>
+        //nhap vap mot chuoi ki tu
+        let string = prompt("Ban hay nhap vao mot chuoi ki tu :")
+        //Ham kiem tra tan suat xuat hien cac cac character
+        function charFrequency(string){
+            arrFlag = [];
+            arrStringResule = [];
+            arrStringCount = [];
+            for(let i=0;i<string.length;i++){
+                if(string[i]==" "){
+                    arrFlag.push(true);
+                }else{
+                    arrFlag.push(false);
+                }
+            }
+            for(let i=0;i<string.length;i++){
+                let count = 1;
+                if(arrFlag[i]==false){
+                    for(let j=i+1;j<string.length;j++){
+                        if(string[i]===string[j]){
+                            count++;
+                            arrFlag[j]=true;
+                        }
+                    }
+                    if(count>1){
+                        arrStringResule.push(string[i]);
+                        arrStringCount.push(count);
+                        count = 1;
+                    }
+                }
+            }
+            if(arrStringResule.length>0){
+                for(let i=0;i<arrStringResule.length;i++){
+                    console.log(`So lan xuat hien ki tu ${arrStringResule[i]} la ${arrStringCount[i]} \n`);
+                }
+            }
+        }
+        console.log(string);        
+        charFrequency(string);
+    </script>
+</body>
+</html>

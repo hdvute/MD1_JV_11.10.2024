@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        Bài 3: Viết hàm tính giai thừa của một số nguyên bất kỳ được đưa vào. Thực thi hàm vừa khởi tạo
+    -->
+    <script>
+        //nhap vao mot so nguyen bat ky
+        let number = parseInt(prompt("Ban hay nhap vao mot so nguyen bat ky:"));
+        // Viet ham tinh giai thua
+        function factorial(number){
+            let result=1;
+            if (number<0){
+                console.log("Khong co giai thua cua so nho hon 0");
+                result = 0;
+                return result;             
+            }else if(number == 1){
+                console.log("Giai thua cua 0 la 1");                
+            }else{
+                for(let i=1;i<=number;i++){
+                    result *= i;
+                }
+                return result;
+            }
+        }     
+        if(factorial(number)>0){
+            console.log(`Giai thua cua ${number} la ${factorial(number)}`);            
+        }
+    </script>
+</body>
+</html>

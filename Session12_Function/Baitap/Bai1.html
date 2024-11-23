@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    Bài 1: Viết chương trình cho người dùng nhập vào 3 số, viết hàm kiểm tra để tìm ra số bé nhất và in ra số đó
+    -->
+    <script>
+        //Nhap vao 3 so
+        let num1 = +prompt("Nhap vao so thu nhat: ");
+        let num2 = +prompt("Nhap vao so thu hai: ");
+        let num3 = +prompt("Nhap vao so thu ba: ");
+        //Ham tim so be nhat
+        function min(num1,num2,num3){
+            let min = num1;
+            if(num2 < min){
+                min = num2;
+            }else if(num3 < min){
+                min = num3;
+            }
+            return min;
+        }
+        console.log(`So nho nhat trong 3 so ${num1} ,${num2}, ${num3} la: `,min(num1,num2,num3))
+        // document.write(`So nho nhat trong 3 so ${num1} ,${num2}, ${num1} la: `,min(num1,num2,num3));
+    </script>
+</body>
+</html>
